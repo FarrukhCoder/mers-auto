@@ -1,0 +1,413 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1300px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    padding-inline-start: 0px;
+}
+.basket-navbar{
+    width: 100%;
+    padding: 30px 0;
+    background: #333333;
+}
+.basket-nav-item{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.basket-nav-items{
+    display: flex;
+    align-items: center;
+    font-family: 'Calibri';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    transition: 0.3s all;
+}
+.basket-next{
+    padding: 70px 100px;
+    display: flex;
+}
+.basket-nexts{
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    font-family: 'Calibri';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    transition: 0.3s all;
+    cursor: pointer;
+}
+.basket-nexts ion-icon{
+    padding: 0 10px;
+    width: 24px;
+    height: 24px;
+}
+.basket-line{
+    width: 70px;
+    border: 0.8px solid;
+}
+.black{
+    color: #7f7f7f;
+}
+.wishlist{
+    padding: 30px 0;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.wishlist-much p{
+    font-family: 'Calibri';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #000000;
+}
+.wishlist-confirm{
+    display: flex;
+    align-items: center;
+}
+.wishlist-checkbox {
+    display: block;
+    align-items: center;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-family: 'Calibri';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #152A59;
+
+}
+.wishlist-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: rgb(184, 182, 217);
+}
+.wishlist-checkbox:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+  
+.wishlist-checkbox input:checked ~ .checkmark {
+    background-color: #1675c4;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.wishlist-checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+.wishlist-checkbox .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+.wishlist-move p{
+    margin: 0 10px;
+    padding:  0 10px;
+    border-right: 2px solid #CCCCCC;
+    border-left: 2px solid #CCCCCC;
+    font-family: 'Calibri';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #00C2FF;
+    cursor: pointer;
+}
+.wishlist-remove p{
+    font-family: 'Calibri';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #FF0000;
+    cursor: pointer;
+}
+.product{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.select-product{
+    width: 75%;
+}
+.confirm-product{
+    width: 23%;
+}
+.select-product__title{
+    box-sizing: border-box;
+    padding: 30px;
+    background: #F6F6F6;
+    display: flex;
+    width: 100%;
+}
+.select-product__subtitle{
+    width: 45%;
+    font-family: 'Calibri';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+.select-product__item{
+    width: 55%;
+}
+.select-product__item ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    font-family: 'Calibri';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+.product-infos{
+    padding: 30px 0;
+}
+.product-info{
+    display: flex;
+    width: 100%;
+}
+.product-info:nth-child(2){
+    padding: 30px 0;
+    margin: 20px 0;
+    border-top: 1px dashed #C6C6C6;
+    border-bottom: 1px dashed #C6C6C6;
+}
+.product-info:nth-child(3){
+    border-bottom: 1px dashed #c6c6c6;
+    padding-bottom: 30px;
+}
+.product-checkbox{
+    display: flex;
+    width: 45%;
+}
+.product-checkbox p{
+    width: 40%;
+    font-family: 'Calibri';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+}
+.product-checkbox img{
+    margin: 0 20px;
+}
+.product-checkbox .product-check{
+    display: flex;
+    align-items: center;
+}
+.product-price{
+    width: 55%;
+}
+.product-price ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 89%;
+}
+.product-price ul li{
+    font-family: 'Calibri';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+}
+.product-price ul li:nth-child(2){
+    letter-spacing: 3px;
+}
+.all-prices{
+    padding: 20px 25px;
+    background: #F6F6F6;
+}
+.all-prices h1{
+    font-family: 'Calibri';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+.all-prices__text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.all-prices__text p{
+    font-family: 'Calibri';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #959595;
+}
+.all-prices__text span,
+.all-prices__text:nth-child(4) p{
+    font-family: 'Calibri';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    color: #000000;
+}
+.all-prices__text:nth-child(4){
+    border-top: 1px solid #D5D5D5;
+}
+.confirm-product__button{
+    margin: 20px 0;
+}
+.confirm-product__button button{
+    width: 100%;
+    padding: 10px 0;
+    font-family: 'Calibri';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #152A59;
+    border: none;
+}
+.product-pay p{
+    font-family: 'Calibri';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+.pay-type{
+    margin: 20px 0;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+.product-pay ul{
+    width: 70%;
+    padding-left: 15px;
+}
+.product-pay ul li{
+    padding-bottom: 20px;
+    font-family: 'Calibri';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #979797;
+}
+.liked-product{
+    padding: 60px 0;
+}
+.liked-product h1{
+    font-family: 'Calibri';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #000000;
+}
+.liked-product .cards{
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.liked-product{
+    padding: 30px 0;
+} 
+.liked-product .card{
+    box-sizing: border-box;
+    border: 2px solid #ECECEC;
+    padding: 20px 30px;
+}
+.liked-product  .card .icons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.liked-product .card .icons ion-icon {
+  width: 24px;
+  height: 24px;
+}
+.liked-product .card .img {
+  width: 145px;
+  height: 127px;
+  margin: 0 auto 16px auto;
+}
+.liked-product .card .img img {
+  width: 100%;
+  height: 100%;
+}
+.liked-product .card .stars {
+  margin-bottom: 16px;
+}
+.liked-product .card .product_name {
+  width: 156px;
+  margin: 0 auto 8px auto;
+}
+.liked-product .card .product_name p {
+  font-family: "Calibri";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: #39546c;
+}
+.liked-product .price p {
+  font-family: "Calibri";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #000000;
+}
+footer{
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: #F2F2F2;
+}
+.footer-partners ul{
+    display: flex;
+    list-style: none;
+}
+.footer-partners ul li{
+    padding: 0 10px;
+}
+.basket-copyright p{
+    font-family: 'Calibri';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    color: #000000;
+}

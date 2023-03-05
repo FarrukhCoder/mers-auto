@@ -1,0 +1,170 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #E5E5E5;
+}
+.container{
+    width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.props-navbar{
+    width: 100%;
+    padding: 30px 0;
+    background: #333333;
+    text-align: center;
+}
+.props-card{
+    width: 50%;
+    margin: 80px 0;
+    padding: 30px 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 60px 2px rgba(0, 0, 0, 0.05);
+}
+.props-card__subtitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #D0D0D0;
+}
+.props-card__subtitle h2{
+    font-family: 'Calibri';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
+    color: #000000;
+}
+.props-card__subtitle p{
+    font-family: 'Calibri';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    color: #000000;
+}
+.props-card__main{
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.props-card__pay-text{
+    width: 45%;
+    text-align: end;
+    font-family: 'Calibri';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+}
+.props-card__pay-checkbox{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.props-card__main:nth-child(2) input{
+    margin: 0;
+    border: 1px solid #C4C4C4;
+    accent-color: red;
+    width: 21px;
+    height: 21px;
+}
+.props-card__main:nth-child(3) input{
+    width: 100%;
+    outline: none;
+    padding: 5px 3px;
+    border: 1px solid #C4C4C4;
+}
+.props-card__main:nth-child(4){
+    width: 100%;
+}
+.props-card__main:nth-child(4) .props-card__pay-text{
+    width: 29.25%;
+    text-align: end;
+}
+.props-card__main:nth-child(4) .props-card__pay-checkbox{
+    width: 61%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.props-card__main:nth-child(4) .props-card__pay-checkbox input{
+    width: 27%;
+    outline: none;
+    padding: 5px 3px;
+    border: 1px solid #C4C4C4;
+}
+.props-card__main:nth-child(4) .props-card__pay-checkbox p{
+    width: 33%;
+    font-family: 'Calibri';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    color: #000000;
+}
+.props-card__main:nth-child(5){
+    width: 100%;
+}
+.props-card__main:nth-child(5) .props-card__pay-text{
+    width: 29.25%;
+}
+.props-card__main:nth-child(5) .props-card__pay-text p{
+    margin-top: 40px;
+}
+.props-card__main:nth-child(5) .props-card__pay-checkbox{
+    width: 61%;
+    display: inline-block;
+}
+.props-card__main:nth-child(5) .props-card__pay-checkbox input{
+    width: 27%;
+    outline: none;
+    padding: 5px 3px;
+    border: 1px solid #C4C4C4;
+}
+.props-card__main:nth-child(5) .props-card__pay-checkbox p{
+    width: 100%;
+    font-family: 'Calibri';
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    color: #ACACAC;
+}
+.props-card__button{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.props-card__buttons{
+    width: 45%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.props-card__buttons button:nth-child(1){
+    padding: 10px 35px;
+    font-family: 'Calibri';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #152A59;
+    border: none;
+    transition: 0.3s all;
+}
+.props-card__buttons button:nth-child(2){
+    padding: 10px 35px;
+    font-family: 'Calibri';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #152A59;
+    border: none;
+    transition: 0.3s all;
+}
+
+

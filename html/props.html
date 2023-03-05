@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../images/favicon/site.webmanifest" />
+    <link rel="stylesheet" href="../css/props.css">
+    <title>Props</title>
+</head>
+<body>
+    
+    <!-- props navbar -->
+        <div class="props-navbar">
+            <div class="container">
+                <img src="../images/Logo.png" alt="logo png">
+            </div>
+        </div>
+    <!-- /props navbar -->
+
+    <!-- props-card section -->
+        <div class="container">
+            <section class="props-card">
+                <div class="props-card__subtitle">
+                    <h2>
+                        Реквизиты платежа
+                    </h2>
+                    <p>
+                        * Обязательное поле
+                    </p>
+                </div>
+                <div class="props-card__main">
+                    <div class="props-card__pay-text">
+                        <p>
+                            Тип карты *
+                        </p>
+                    </div>
+                    <div class="props-card__pay-checkbox">
+                        <input type="radio" id="" value="visa" name="pay">
+                        <img src="../images/visa.png" alt="png">
+                        <input type="radio" id="" value="mastercard" name="pay">
+                        <img src="../images/MasterCard.png" alt="png">
+                    </div>
+                </div>
+                <div class="props-card__main">
+                    <div class="props-card__pay-text">
+                        <p>
+                            Номер кредитной карты *
+                        </p>
+                    </div>
+                    <div class="props-card__pay-checkbox">
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="props-card__main">
+                    <div class="props-card__pay-text">
+                        <p>
+                            Месяц окончания *
+                        </p>
+                    </div>
+                    <div class="props-card__pay-checkbox">
+                        <input type="text">
+                        <p>
+                            Год окончания *
+                        </p>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="props-card__main">
+                    <div class="props-card__pay-text">
+                        <p>
+                            CVN (код проверки подлинности карты) *
+                        </p>
+                    </div>
+                    <div class="props-card__pay-checkbox">
+                        <p>
+                            Этот код напечатан на оборотной стороне карты и состоит из трех или четырех цифр.
+                        </p>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="props-card__button">
+                    <div class="props-card__buttons">
+                        <button type="submit" class="button__1">Отменить</button>
+                        <button type="submit" class="button_2">Сохранить</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    <!-- /props-card section -->
+
+</body>
+</html>
